@@ -1,0 +1,20 @@
+
+import java.util.*;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        
+        boolean flag = false;
+        
+        double res = Math.sqrt(n+1);
+        
+        if( res - Math.floor(res) == 0){
+            flag = true;
+        }
+        
+        System.out.println(flag);
+    }
+}
